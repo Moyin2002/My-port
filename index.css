@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -80,10 +80,10 @@ html{
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
-  transition: color 0.3 ease;
+  transition: color 0.3s ease;
 }
 
-.scroll-up-btn{
+.scroll-up-btn {
   position: fixed;
   height: 45px;
   width: 42px;
@@ -102,14 +102,13 @@ html{
   transition: all 0.3s ease;
 }
 
-.scroll-up-btn.show{
+.scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
   pointer-events: auto;
 }
 
 /* home section styling */
-
 .home {
   display: flex;
   background: url("./moyinoluwa.png") no-repeat center;
@@ -134,8 +133,6 @@ html{
 .home .home-content .text-2 {
   font-size: 40px;
   font-weight: 600;
-  margin-left: -3px;
-  width: 200px;
   margin: 0;
   padding: 0;
 }
@@ -167,7 +164,7 @@ html{
   background: none;
 }
 
-/* all similar content styling code */
+/* general section styling */
 section {
   padding: 100px 0;
 }
@@ -222,8 +219,8 @@ section .title::after {
   transform: translateX(-50%);
   bottom: -13px;
 }
-/* about us styling */
 
+/* about section */
 .about .title::after {
   content: "who i am";
 }
@@ -245,7 +242,7 @@ section .title::after {
 
 .about .about-content .right .text {
   font-size: 20px;
-  font-weight: 600px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -276,16 +273,11 @@ section .title::after {
   background: none;
 }
 
-/* services section stying */
+/* services */
 .services,
 .teams {
   color: #fff;
   background: #111;
-}
-
-.services .title::before,
-.teams .title::before {
-  background: #fff;
 }
 
 .services .title::after,
@@ -306,16 +298,13 @@ section .title::after {
 .services .serv-content .card:hover {
   background: crimson;
 }
+
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
 
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
-}
-
-.services .serv-content .card p {
-  font-size: 15px;
 }
 
 .services .serv-content .card i {
@@ -334,8 +323,7 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
-/* skills section stying */
-
+/* skills section */
 .skills .title::after {
   content: "what i know";
 }
@@ -424,7 +412,7 @@ section .title::after {
   width: 30%;
 }
 
-/* Teams section styling start */
+/* teams section */
 .teams .title::after {
   content: "who with me";
 }
@@ -449,7 +437,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover.box {
+.teams .carousel .card:hover .box {
   transform: scale(1.05);
 }
 
@@ -458,6 +446,7 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
 .teams .carousel .card img {
   height: 100px;
   width: 100px;
@@ -479,7 +468,6 @@ section .title::after {
   height: 13px;
   width: 13px;
   margin: 0 5px;
-  outline: none !important;
   border-radius: 50%;
   border: 2px solid crimson !important;
 }
@@ -494,7 +482,7 @@ section .title::after {
   background: crimson !important;
 }
 
-/* contact section styling */
+/* contact section */
 .contact .title::after {
   content: "get in touch";
 }
@@ -502,8 +490,6 @@ section .title::after {
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
-
-
 
 .contact .contact-content .left p {
   text-align: justify;
@@ -513,7 +499,6 @@ section .title::after {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-
 }
 
 .contact .contact-content .left .icons {
@@ -547,14 +532,6 @@ section .title::after {
   display: flex;
 }
 
-.contact .contact-content .info .sub-title {
-  color: #333;
-}
-
-.contact .right form .fields {
-  display: flex;
-}
-
 .contact .right form .field,
 .contact .right form .fields .field {
   height: 45px;
@@ -573,6 +550,7 @@ section .title::after {
 
 .contact .right form .email {
   margin-right: 10px;
+
 }
 
 .contact .right form .field input,
@@ -587,17 +565,17 @@ section .title::after {
   font-family: "Poppins", sans-serif;
 }
 
-.contact .right form .textarea textarea{
-  padding-top: 10px
+.contact .right form .textarea textarea {
+  padding-top: 10px;
   resize: none;
 }
 
-.contact .right form .button{
+.contact .right form .button {
   height: 47px;
   width: 170px;
 }
 
-.contact .right form .button button{
+.contact .right form .button button {
   width: 100%;
   height: 100%;
   border: 2px solid crimson;
@@ -610,39 +588,45 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.contact .right form .button button:hover{
+.contact .right form .button button:hover {
   color: crimson;
   background: none;
 }
 
-
-/* footer section styling */
-footer{
+/* footer */
+footer {
   background: #111;
   padding: 20px 23px;
   color: #fff;
 }
 
-footer span a{
+footer span a {
   color: crimson;
   text-decoration: none;
 }
 
-footer span a:hover{
+footer span a:hover {
   text-decoration: underline;
 }
 
+.swal2-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-title {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-content {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-confirm {
+  font-family: 'Poppins', sans-serif !important;
+}
 
 
-
-
-
-
-
-
-
-
-/* responsive media query start */
+/* responsive */
 @media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0px;
@@ -663,10 +647,6 @@ footer span a:hover{
 }
 
 @media (max-width: 947px) {
-  .max-width {
-    padding: 0 50px;
-  }
-
   .menu-btn {
     display: block;
     z-index: 999;
@@ -702,29 +682,9 @@ footer span a:hover{
     font-size: 20px;
     font-weight: 800;
   }
-  
-
-  .home .home-content .text-2 {
-    font-size: 30px;
-    width: 200px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 30px;
-    margin: 5px 0;
-  }
-
-  .home .home-content a {
-    font-size: 20px;
-    padding: 10px 30px;
-  }
 
   .max-width {
     max-width: 800px;
-  }
-
-  .about .about-content .colums {
-    width: 100%;
   }
 
   .about .about-content .left {
@@ -734,7 +694,7 @@ footer span a:hover{
   }
 
   .about .about-content .right {
-    flex: 100%;
+    width: 100%;
   }
 
   .services .serv-content .card {
@@ -752,18 +712,6 @@ footer span a:hover{
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 30px;
-  }
-
-  .home .home-content .text-2 {
-    font-size: 50px;
-  }
-
-  .home .home-content a {
-    font-size: 20px;
   }
 
   .services .serv-content .card,
